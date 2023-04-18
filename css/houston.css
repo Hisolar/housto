@@ -1,0 +1,1072 @@
+body{
+    margin: 0;
+    font-family: montserrat;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 640px) {
+
+    .banner{
+        display: none;
+    }
+    
+    .banner > a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: .5rem;
+    }
+    
+    .banner> a > img{
+        width: 1rem;
+    }
+    
+    .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    }
+    
+    .logo > img{
+        width: 50px;
+    }
+        
+    nav{
+        background-color: #102D6C;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        gap: 1rem;
+    
+    }
+    nav >a {
+        background-color: #FEF470;
+        padding: .5rem 2rem;
+        border-radius: 5rem;
+        text-decoration: none;
+        color: black;
+        
+    }
+    nav >a:hover{
+        transform: ease-in-out (2sec);
+        background-color: #5386E4;
+    
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav>ul{
+        list-style: none;
+        display: none;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .social{
+        display: none;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .social img {
+        width: 2rem;
+    
+    }
+    
+    [data-active]{
+        color: #5386E4;
+    }
+    
+    .bg{
+        background: linear-gradient(to right, #102D6C,transparent),url(../images/bg.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    h5{
+        color: #ffffff;
+        margin: 0;
+        font-size: 2rem;
+        gap: 2rem;
+    }
+    
+    h1{
+        color: #ffffff;
+        font-size: 4rem;
+        margin: 0;
+    }
+    .s-btn{
+        text-decoration: none;
+        border-radius: 5rem;
+        padding: 1rem 2rem;
+        color: #102D6C;
+        background-color: #ffffff;
+        display:inline-block;
+        margin-top: 1rem;
+        }
+        
+    span{
+        color: #FEF470;
+    }
+    
+    .checking{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0;
+    }
+    
+    .checking > li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: white;
+    }
+
+    
+    .rev{
+        background-color: #102D6C;
+        padding: .5rem;
+        padding-top: 0;
+        border-radius: 1rem;
+        width: fit-content;
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+    }
+    
+    .rev > h1 {
+     margin: 0 auto;
+     width: fit-content;
+     padding: 0;
+     font-size: 3rem;
+    }
+    
+    .rev > p {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .star{
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .middle-wrapper{
+        padding: 2rem 1rem;
+    }
+    
+    .middle{
+    position: relative;
+    }
+    
+    .img-1{
+        border-radius: .5rem;
+        width: 50%;
+    }
+    
+    .img-2{
+    position: relative;
+    left: 35%; 
+    top: -2rem;
+    }
+    
+    .middle-text{
+
+        position: relative;
+    }
+    
+    .middle-text > h2{
+        font-size: 5rem;
+        color: rgba(128, 128, 128, 0.087);
+        margin: 0;
+        font-weight: 900;
+    
+    }
+    
+    .middle-text > h3{
+        font-size: 1.3rem;
+        color: #5386E4;
+         margin: 0; 
+        position: absolute;
+        top: 4rem;
+    }
+    
+    .middle-text > p{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin: 0;
+    }
+
+    section{
+        background: linear-gradient( to right, #102D6C, transparent), url(../images/slide.jpeg);
+        /* height:80vh;
+        width: 100%; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 2rem 0;
+    }
+    
+    section > h5{
+    text-align: center;
+    padding-top: 1rem;
+    
+    
+    }
+    
+    section > p{
+        font-weight: 300;
+        font-size: 1rem;
+        color: #ffffff;
+        text-align: justify; 
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 0;
+    }
+    
+    section > ul{
+        list-style: none;
+        color: #ffffff;
+        font-weight: 600;
+        gap: 1rem;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    section > ul > li{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+    }
+    
+    .How{
+    text-align: center;
+    font-size: 2rem;
+    /* margin: 0;
+    padding: 0; */
+    }
+    
+    .dot{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0;
+    padding: 0; */
+    }
+    
+    .dot1{
+        background-color: #5386E4;
+        width: 5px;
+        aspect-ratio: 1;
+    }
+    
+    .dot2{
+        background-color: #5386E4;
+        width: 5px;
+        aspect-ratio: 1;
+    }
+    .dot3{
+        background-color: #5386E4;
+        width: 120px;
+        height: 5px;
+    }
+    div p{
+        text-align: center;
+        /* margin-left: 5rem;
+        margin-right: 5rem; */
+    }
+    
+    
+    footer{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+    
+    .apart{
+        background-image: url(../images/16\ Valleycrest\ Drive-102.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* width: 100%; */
+        aspect-ratio: 1/1;
+        padding: 1rem 1rem;
+    }
+    
+    .comm{
+        background-image: url(../images/16\ Valleycrest\ Drive-120.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 1rem 1rem;
+    }
+    
+    .res{
+        background-image: url(../images/16\ Valleycrest\ Drive-139.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 1rem 1rem;
+    }
+    
+    .class {
+        background: white;
+        display: grid;
+        place-items: center;
+    }
+    
+    .class > .button {
+        background-color: #102D6C;
+        color: white;
+        padding: 2rem 5rem;
+        font-size: 2rem;
+        display: block;
+        border-width: 0;
+        transition: all 3s ease-in-out;
+    }
+    
+    .class >.button:hover{
+        transform: skew(360deg);
+    }    
+}
+
+@media screen and (min-width: 640px) {
+    
+    .banner{
+        background-color: #102D6C;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        padding: 1rem 2rem;
+    }
+    
+    .banner > a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: .5rem;
+    }
+    
+    .banner> a > img{
+        width: 1rem;
+    }
+    
+    .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    }
+    
+    .logo > img{
+        width: 10rem;
+    }
+    
+    .menu-btn{
+        display: none;
+    }
+    
+    nav{
+        background-color: #102D6C;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        gap: 1rem;
+    
+    }
+    nav >a {
+        background-color: #FEF470;
+        padding: .5rem 1rem;
+        border-radius: 5rem;
+        text-decoration: none;
+        color: black;
+        
+    }
+    nav >a:hover{
+        transform: ease-in-out (2sec);
+        background-color: #5386E4;
+    
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav>ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .social{
+        display: none;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .social img {
+        width: 2rem;
+    
+    }
+    
+    [data-active]{
+        color: #5386E4;
+    }
+    
+    .bg{
+        background: linear-gradient(to right, #102D6C,transparent),url(../images/bg.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    h5{
+        color: #ffffff;
+        margin: 0;
+        padding-left: 4rem;
+        font-size: 2rem;
+        gap: 2rem;
+    }
+    
+    h1{
+        color: #ffffff;
+        width: 50rem;
+        font-size: 5rem;
+        margin: 0;
+        padding-left: 4rem;
+    }
+    
+    span{
+        color: #FEF470;
+    }
+    
+    .checking{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .checking > li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: white;
+        padding-left: 2rem;
+    }
+    
+    .s-btn{
+    text-decoration: none;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    color: #102D6C;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    }
+    
+    section{
+        background: linear-gradient( to right, #102D6C, #102d6cd8, transparent), url(../images/slide.jpeg);
+        height:80vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    section > h5{
+    text-align: center;
+    padding-top: 2rem;
+    
+    }
+    
+    section > p{
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        /* margin-top: 0; */
+    }
+    
+    section > ul{
+        list-style: none;
+        color: #ffffff;
+        font-weight: 600;
+        gap: 1rem;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    section > ul > li{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+    }
+    
+    .How{
+    text-align: center;
+    font-size: 2rem;
+    /* margin: 0;
+    padding: 0; */
+    }
+    
+    .dot{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0;
+    padding: 0; */
+    }
+    
+    .dot1{
+        background-color: #5386E4;
+        width: 5px;
+        aspect-ratio: 1;
+    }
+    
+    .dot2{
+        background-color: #5386E4;
+        width: 5px;
+        aspect-ratio: 1;
+    }
+    .dot3{
+        background-color: #5386E4;
+        width: 120px;
+        height: 5px;
+    }
+    div p{
+        text-align: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .middle-wrapper{
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+    .middle{
+    width: 50%;
+    position: relative;
+    }
+    
+    .img-1{
+        border-radius: 1.5rem;
+    }
+    
+    .img-2{
+    position: relative;
+    left: 37%;
+    top: -2rem;
+    }
+    
+    .middle-text{
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .middle-text > h2{
+        font-size: 4.5rem;
+        color: rgba(128, 128, 128, 0.087);
+        margin: 0;
+        font-weight: 900;
+    
+    }
+    
+    .middle-text > h3{
+        font-size: 1.2rem;
+        text-align: justify;
+        color: #5386E4;
+        margin: 0;
+        position: absolute;
+        top: 3rem;
+    }
+    
+    .middle-text > p{
+        font-size: 1.3rem;
+        text-align: justify;
+        margin: 0;
+    }
+    
+    .rev{
+        background-color: #102D6C;
+        padding: .55rem;
+        border-radius: 1rem;
+        width: fit-content;
+        position: absolute;
+        top: 0rem;
+        right: 0;
+    }
+    
+    .rev > h1 {
+     margin: 0 auto;
+     width: fit-content;
+     padding: 0;
+     font-size: 3.5rem;
+    }
+    
+    .rev > p {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .star{
+        margin: 0 auto;
+        width: fit-content;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 1rem;
+        padding: 2rem 4rem;
+    }
+    
+    .apart{
+        background-image: url(../images/16\ Valleycrest\ Drive-102.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 1rem 1rem;
+    }
+    
+    .comm{
+        background-image: url(../images/16\ Valleycrest\ Drive-120.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 1rem 1rem;
+    }
+    
+    .res{
+        background-image: url(../images/16\ Valleycrest\ Drive-139.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 1rem 1rem;
+    }
+    
+    .class {
+        background: white;
+        display: grid;
+        place-items: center;
+    }
+    
+    .class > .button {
+        background-color: #102D6C;
+        color: white;
+        padding: 2rem 5rem;
+        font-size: 2rem;
+        display: block;
+        border-width: 0;
+        transition: all 3s ease-in-out;
+    }
+    
+    .class >.button:hover{
+        transform: skew(360deg);
+    }
+    }
+
+@media screen and (min-width: 1024px) {
+    
+.banner{
+    background-color: #102D6C;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.banner > a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: .5rem;
+}
+
+.banner> a > img{
+    width: 1rem;
+}
+
+.logo{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+}
+
+.logo > img{
+    width: 10rem;
+}
+
+.menu-btn{
+    display: none;
+}
+
+nav{
+    background-color: #102D6C;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+nav >a {
+    background-color: #FEF470;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    color: black;
+    
+}
+nav >a:hover{
+    transform: ease-in-out (2sec);
+    background-color: #5386E4;
+
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social img {
+    width: 2rem;
+
+}
+
+[data-active]{
+    color: #5386E4;
+}
+
+.bg{
+    background: linear-gradient(to right, #102D6C,transparent),url(../images/bg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h5{
+    color: #ffffff;
+    margin: 0;
+    padding-left: 4rem;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+h1{
+    color: #ffffff;
+    width: 50rem;
+    font-size: 5rem;
+    margin: 0;
+    padding-left: 4rem;
+}
+
+span{
+    color: #FEF470;
+}
+
+.checking{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.checking > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding-left: 2rem;
+}
+
+.s-btn{
+text-decoration: none;
+border-radius: 5rem;
+padding: 1rem 2rem;
+color: #102D6C;
+background-color: #ffffff;
+display: inline-block;
+margin-left: 4rem;
+margin-top: 1rem;
+}
+
+section{
+    background: linear-gradient( to right, #102D6C, #102d6cd8, transparent), url(../images/slide.jpeg);
+    height:80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section > h5{
+text-align: center;
+padding-top: 5rem;
+
+
+}
+
+section > p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    /* margin-top: 0; */
+}
+
+section > ul{
+    list-style: none;
+    color: #ffffff;
+    font-weight: 600;
+    gap: 1rem;
+    width: fit-content;
+    margin: auto;
+}
+
+section > ul > li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.How{
+text-align: center;
+font-size: 2rem;
+/* margin: 0;
+padding: 0; */
+}
+
+.dot{
+display: flex;
+gap: .5rem;
+align-items: center;
+justify-content: center;
+/* margin: 0;
+padding: 0; */
+}
+
+.dot1{
+    background-color: #5386E4;
+    width: 5px;
+    aspect-ratio: 1;
+}
+
+.dot2{
+    background-color: #5386E4;
+    width: 5px;
+    aspect-ratio: 1;
+}
+.dot3{
+    background-color: #5386E4;
+    width: 120px;
+    height: 5px;
+}
+div p{
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.middle-wrapper{
+    display: flex;
+    padding: 2rem 4rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.middle{
+width: 50%;
+position: relative;
+}
+
+.img-1{
+    border-radius: 1.5rem;
+}
+
+.img-2{
+position: relative;
+left: 35%;
+top: -3rem;
+}
+
+.middle-text{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.middle-text > h2{
+    font-size: 7rem;
+    color: rgba(128, 128, 128, 0.087);
+    margin: 0;
+    font-weight: 900;
+
+}
+
+.middle-text > h3{
+    font-size: 2rem;
+    text-align: justify;
+    color: #5386E4;
+    margin: 0;
+    position: absolute;
+    top: 5rem;
+}
+
+.middle-text > p{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.rev{
+    background-color: #102D6C;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+}
+
+.rev > h1 {
+ margin: 0 auto;
+ width: fit-content;
+ padding: 0;
+ font-size: 5rem;
+}
+
+.rev > p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.star{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+footer{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 4rem;
+}
+
+.apart{
+    background-image: url(../images/16\ Valleycrest\ Drive-102.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 1rem 1rem;
+}
+
+.comm{
+    background-image: url(../images/16\ Valleycrest\ Drive-120.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 1rem 1rem;
+}
+
+.res{
+    background-image: url(../images/16\ Valleycrest\ Drive-139.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 1rem 1rem;
+}
+
+.class {
+    background: white;
+    display: grid;
+    place-items: center;
+}
+
+.class > .button {
+    background-color: #102D6C;
+    color: white;
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    display: block;
+    border-width: 0;
+    transition: all 3s ease-in-out;
+}
+
+.class >.button:hover{
+    transform: skew(360deg);
+}
+}
+
+a:hover{
+  background-color: #5386E4;
+  transition: all 3s ease-in-out;
+  padding: .075rem;
+  border-radius: 1.5rem;
+  color: #ffffff;
+}

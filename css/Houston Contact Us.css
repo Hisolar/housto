@@ -1,0 +1,129 @@
+
+body{
+    margin: 0;
+    font-family: montserrat;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.contact{
+background-image: url('../images/contact.jpg');
+height: 70vh;
+}
+
+.bg-color{
+    background-color: #102d6cc3;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.contact p{
+    font-size: 5rem;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+.contact a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+}
+
+main{
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+form{
+    padding: 2rem 4rem;
+    box-shadow: -5px -5px 30px #aeaeae;
+    width: 70%;
+    display: grid;
+    gap: 1rem;
+}
+form:hover{
+    background-color: rgba(255, 228, 196, 0.383);
+  
+}
+input, textarea{
+    background-color: #c7c7c7;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    transition: ease-in 1s;
+}
+
+button{
+    background-color:#102d6cc3 ;
+    padding: 1.5rem 3.5rem;
+    color: white;
+    border: none;
+    outline: none;
+    width: fit-content;
+    border-top-right-radius: 1rem;
+    font-size: 1rem;
+}
+
+.add h5{
+    color: #102d6cc3;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+
+}
+
+.add p{
+text-align: left;
+padding: 0;
+margin: 0;
+}
+
+.rate{
+    width: 30%;
+    padding: 1.5rem;
+    display: grid;
+    gap: .05rem;
+
+}
+.add{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.ct-img{
+    background-color:#102d6cc3 ;
+    width: 15%;
+    aspect-ratio: 1;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in 1s;
+
+}
+
+button:hover{
+    background-color: bisque;
+    transition: ease-in-out;
+    color: black;
+
+}
+
+.ct-img:hover{
+    background-color: bisque;
+}
